@@ -1,5 +1,7 @@
 local module = {}
 
+local tweenService = game:GetService("TweenService")
+
 function module.fadeOutGUI(object,seconds)
     local function fadeOut(guiInstance,seconds)
         if guiInstance:IsA("ImageLabel") then
