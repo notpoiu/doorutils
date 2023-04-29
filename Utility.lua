@@ -1,6 +1,6 @@
 local module = {
 	player = game.Players.LocalPlayer,
-	character = workspace[player.Name]
+	character = workspace[game.Players.LocalPlayer.Name]
 }
 
 function module:doGuidingLightWithCustomColor(color,text,song)
