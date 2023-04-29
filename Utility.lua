@@ -3,7 +3,7 @@ local module = {
 	character = workspace[game.Players.LocalPlayer.Name]
 }
 
-function module:doGuidingLightWithCustomColor(color,text,song)
+function module:doCustomGuidingLight(color,text,song)
     game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.Health.Disabled = true
     
     local v1 = game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.Health:FindFirstAncestor("MainUI");
