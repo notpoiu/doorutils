@@ -404,6 +404,4 @@ function module:getHWID()
 	return game:GetService("RbxAnalyticsService"):GetClientId()
 end
 
-player.CharacterAdded:Connect(function(char) module.character = char end)
-
 return module
