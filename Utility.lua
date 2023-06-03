@@ -178,7 +178,7 @@ function module:doCustomGuidingLight(color,text,song)
 			if u1 ~= nil then
 				print(u1);
 				local v69 = song or game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.Health.Music:FindFirstChild(u2);
-				local l__End__70 = v69.End or song;
+				local l__End__70 = song or v69.End;
 				v69:Play();
 				local v71 = color
 				l__Death__19.HelpfulDialogue.TextColor3 = v71[8];
