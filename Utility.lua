@@ -178,7 +178,7 @@ function module:doCustomGuidingLight(color,text,song)
 			if u1 ~= nil then
 				print(u1);
 				local v69 = song or game:GetService("Players").LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game.Health.Music:FindFirstChild(u2);
-				local l__End__70 = song or v69.End;
+				local l__End__70 = song:Clone() or v69.End;
 				v69:Play();
 				local v71 = color
 				l__Death__19.HelpfulDialogue.TextColor3 = v71[8];
@@ -270,8 +270,8 @@ function module:doCustomGuidingLight(color,text,song)
 					Volume = 1
 				}):Play();
 				l__End__70:Play();
-				l__End__70.TimePosition = 55;
-				delay(1, function()
+				l__End__70.TimePosition = l__End__70.TimeLength - 10;
+				delay(l__End__70.TimeLength - 10, function()
 					v69:Stop();
 				end);
 			else
